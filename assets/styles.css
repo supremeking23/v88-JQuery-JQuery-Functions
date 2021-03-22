@@ -1,0 +1,96 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/* body * {
+	outline: 1px dotted red;
+} */
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+	padding: 20px;
+	background: beige;
+}
+
+button {
+	padding: 10px;
+
+	background: #2b2e4a;
+	color: #fff;
+}
+
+.row {
+	padding: 20px;
+}
+
+.col {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 5px;
+
+	padding: 20px 10px 0px 10px;
+	min-height: 250px;
+	border: 1px solid #53354a;
+}
+
+button,
+.content {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.container {
+	margin: 0 auto;
+	background: #e4d3cf;
+}
+
+.content {
+	width: 70%;
+	text-align: center;
+	/* margin-left: 100px; */
+}
+
+.mb-2 {
+	margin-bottom: 2em;
+}
+
+.red {
+	color: red;
+}
+
+.slide-toggle-section .content img,
+.fadeIn-section .content img,
+.fadeOut-section .content img,
+.slideDown-section .content img,
+.attr-section .content img {
+	width: 100%;
+}
+
+.fadeIn-section .content img,
+.slideDown-section .content img {
+	display: none;
+}
+
+.show-section .content p {
+	display: none;
+}
+
+.form-control {
+	/* width: 100%; */
+	padding: 10px;
+	width: 90%;
+	border-radius: 10px;
+}
+
+.form-control::placeholder {
+	text-align: center;
+	font-weight: bold;
+}
+
+span {
+	font-weight: bold;
+}

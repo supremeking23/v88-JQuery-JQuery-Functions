@@ -1,0 +1,33 @@
+@media only screen and (max-width: 480px) {
+	header {
+		text-align: center;
+	}
+
+	.col-sm {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 481px) {
+	header {
+		text-align: center;
+	}
+
+	.col-md {
+		width: 48%;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	header {
+		text-align: center;
+	}
+
+	.col-lg {
+		width: 23%;
+	}
+
+	.container {
+		width: 100%;
+	}
+}
