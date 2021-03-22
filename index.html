@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JQUERY functions</title>
+
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+
+			header {
+				padding: 20px;
+				background: beige;
+			}
+
+			.row {
+				padding: 20px;
+			}
+
+			.col {
+				display: inline-block;
+			}
+
+			.container-lg {
+				/* width: 1200px; */
+			}
+			body * {
+				outline: 1px dotted red;
+			}
+
+			body {
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
+			}
+
+			.container {
+				width: 720px;
+				margin: 0 auto;
+			}
+
+			.container-content,
+			button {
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			.container-content {
+				width: 70%;
+				text-align: center;
+				margin-left: 100px;
+			}
+
+			.mb-2 {
+				margin-bottom: 2em;
+			}
+
+			.red {
+				color: red;
+			}
+
+			.slide-toggle-section .container-content img,
+			.fadeIn-section .container-content img,
+			.fadeOut-section .container-content img,
+			.slideDown-section .container-content img,
+			.attr-section .container-content img {
+				width: 100%;
+				/* visibility: hidden; */
+			}
+
+			.fadeIn-section .container-content img,
+			.slideDown-section .container-content img {
+				display: none;
+			}
+
+			.show-section .container-content p {
+				display: none;
+			}
+
+			.form-control {
+				/* width: 100%; */
+				padding: 10px;
+				width: 90%;
+				border-radius: 10px;
+			}
+
+			.form-control::placeholder {
+				text-align: center;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="container-lg">
+			<h1>Jquery Functions Assignment</h1>
+		</header>
+
+		<div class="container add-class-section mb-2">
+			<button>AddClass</button>
+			<div class="container-content">
+				<h1>AddClass</h1>
+				<p>Click the button to add class red to this paragraph</p>
+			</div>
+		</div>
+
+		<div class="container slide-toggle-section mb-2">
+			<button>slideToggle</button>
+			<div class="container-content">
+				<h1>slideToggle</h1>
+				<p>Click the button to slidwtoggle a hidden image</p>
+				<img src="https://static.zerochan.net/Mavis.Vermillion.full.1252429.jpg" alt="mavis" />
+			</div>
+		</div>
+
+		<div class="container append-section mb-2">
+			<button>Append</button>
+			<div class="container-content">
+				<h1>Append</h1>
+				<p>Click the button to append a new paragraph</p>
+			</div>
+		</div>
+
+		<div class="container fadeIn-section mb-2">
+			<button>fadeIn</button>
+			<div class="container-content">
+				<h1>fadeIn</h1>
+				<p>Click the button to fadeIn image</p>
+				<img src="https://static.zerochan.net/Mavis.Vermillion.full.1252429.jpg" alt="mavis" />
+			</div>
+		</div>
+
+		<div class="container fadeOut-section mb-2">
+			<button>fadeOut</button>
+			<div class="container-content">
+				<h1>fadeOut</h1>
+				<p>Click the button to fadeOut image</p>
+
+				<img src="https://static.zerochan.net/Mavis.Vermillion.full.1252429.jpg" alt="mavis" />
+			</div>
+		</div>
+
+		<div class="container slideDown-section mb-2">
+			<button>slideDown</button>
+			<div class="container-content">
+				<h1>slideDown</h1>
+				<p>Click the button to slideDown image</p>
+
+				<img src="https://static.zerochan.net/Mavis.Vermillion.full.1252429.jpg" alt="mavis" />
+			</div>
+		</div>
+
+		<div class="container hide-section mb-2">
+			<button>hide</button>
+			<div class="container-content">
+				<h1>hide</h1>
+				<p>Click the button to hide this paragraph</p>
+			</div>
+		</div>
+
+		<div class="container show-section mb-2">
+			<button>show</button>
+			<div class="container-content">
+				<h1>show</h1>
+				<p>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor explicabo fugiat iure quia perspiciatis dolorem natus in provident
+					placeat deserunt? Dolorum maiores praesentium earum quidem incidunt iusto unde ut veritatis. Consequuntur nam culpa quidem
+					accusamus, laboriosam minus reprehenderit fuga voluptatum, nemo quaerat maxime praesentium? Iusto, illum totam nihil velit
+					eligendi consequuntur quisquam mollitia ipsa corrupti accusantium error tempore molestias provident.
+				</p>
+			</div>
+		</div>
+
+		<div class="container val-section mb-2">
+			<button>val()</button>
+			<div class="container-content">
+				<h1>val</h1>
+				<p>get the value of the input tag</p>
+
+				<form action="#" method="POST">
+					<input type="text" name="first-name" id="firt-name" class="form-control" value="" placeholder="type something here" />
+				</form>
+			</div>
+		</div>
+
+		<div class="container text-section mb-2">
+			<button>text()</button>
+			<div class="container-content">
+				<h1>text</h1>
+				<p>Click the button to hide this paragraph</p>
+			</div>
+		</div>
+
+		<div class="container html-section mb-2">
+			<button>html()</button>
+			<div class="container-content">
+				<h1>html</h1>
+				<p>Click the button to change this content</p>
+			</div>
+		</div>
+
+		<div class="container attr-section mb-2">
+			<button>attr()</button>
+			<div class="container-content">
+				<h1>attr</h1>
+				<p>Click the button to change the picture</p>
+
+				<img src="https://static.zerochan.net/Mavis.Vermillion.full.1252429.jpg" alt="mavis" />
+			</div>
+		</div>
+
+		<div class="container before-section mb-2">
+			<button>before()</button>
+			<div class="container-content">
+				<h1>before</h1>
+				<p>Click the button to add a paragraph before this</p>
+			</div>
+		</div>
+
+		<div class="container after-section mb-2">
+			<button>after()</button>
+			<div class="container-content">
+				<h1>after</h1>
+				<p>Click the button to add a paragraph after this</p>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$("button").click(function () {
+					var parent = $(this).parent();
+					var classParent = parent.attr("class").split(" ");
+					var sectionClass = classParent[1];
+
+					if (sectionClass == "add-class-section") {
+						$(`.${sectionClass} .container-content p`).addClass("red");
+					} else if (sectionClass == "slide-toggle-section") {
+						$(`.${sectionClass} .container-content img`).slideToggle();
+					} else if (sectionClass == "append-section") {
+						var addedParagraph = $(`.${sectionClass} .container-content p.added`).length + 1;
+						$(`.${sectionClass} .container-content`).append(`<p class="added">New Paragraph (${addedParagraph})</p>`);
+					} else if (sectionClass == "fadeIn-section") {
+						$(`.${sectionClass} .container-content img`).fadeIn("slow");
+					} else if (sectionClass == "fadeOut-section") {
+						$(`.${sectionClass} .container-content img`).fadeOut();
+					} else if (sectionClass == "slideDown-section") {
+						$(`.${sectionClass} .container-content img`).slideDown();
+					} else if (sectionClass == "hide-section") {
+						$(`.${sectionClass} .container-content p`).hide();
+					} else if (sectionClass == "show-section") {
+						$(`.${sectionClass} .container-content p`).show();
+					} else if (sectionClass == "val-section") {
+						var getValue = $(`.${sectionClass} .container-content form input[type="text"]`).val();
+						alert(getValue);
+					} else if (sectionClass == "text-section") {
+						$(`.${sectionClass} .container-content p`).text("<p>All new content. <em>You bet!</em></p>");
+					} else if (sectionClass == "html-section") {
+						$(`.${sectionClass} .container-content p`).html("<p>All new content. <em>You bet!</em></p>");
+					} else if (sectionClass == "attr-section") {
+						var characters = [
+							{
+								src: "https://static.zerochan.net/Zeref.Dragneel.full.793631.jpg",
+								alt: "Zeref Dragneel",
+							},
+							{
+								src: "https://static.zerochan.net/Mavis.Vermillion.full.1252429.jpg",
+								alt: "Mavis Vermillion",
+							},
+							{
+								src: "https://c4.wallpaperflare.com/wallpaper/746/57/91/anime-fairy-tail-natsu-dragneel-wallpaper-preview.jpg",
+								alt: "Natsu Dragneel",
+							},
+							{
+								src: "https://c4.wallpaperflare.com/wallpaper/809/602/361/anime-fairy-tail-gray-fullbuster-wallpaper-preview.jpg",
+								alt: "Gray Full Buster",
+							},
+						];
+
+						var randomCharacter = Math.floor(Math.random() * characters.length);
+						$(`.${sectionClass} .container-content img`).attr({
+							src: characters[randomCharacter].src,
+							alt: characters[randomCharacter].alt,
+						});
+					} else if (sectionClass == "before-section") {
+						$(`.${sectionClass} .container-content p`).before("<p>All new content. <em>You bet!</em></p>");
+					} else if (sectionClass == "after-section") {
+						$(`.${sectionClass} .container-content p`).after("<p>All new content. <em>You bet!</em></p>");
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
